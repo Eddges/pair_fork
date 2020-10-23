@@ -12,8 +12,8 @@ from rooms.tasks import save_run_output
 @receiver(post_save, sender=RunRequest)
 def dispatch_run_task(sender, instance, created, **kwargs):
     if created:
-        f = open("/home/utkarsh/work/web/pair/back/codeinterview-backend/rooms/input.txt", "r")
-        fx = open("/home/utkarsh/work/web/pair/back/codeinterview-backend/rooms/output.txt", "r")
+        f = open("/home/shekhar/Lab/Projects/asynamite_back/pair_fork/back/codeinterview-backend/rooms/input.txt", "r")
+        fx = open("/home/shekhar/Lab/Projects/asynamite_back/pair_fork/back/codeinterview-backend/rooms/output.txt", "r")
         inp = f.read()
         outp = fx.read()
         # res = current_app.send_task(
