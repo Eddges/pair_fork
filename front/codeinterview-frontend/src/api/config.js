@@ -1,6 +1,6 @@
 //let baseURL = 'codeinterview-backend.herokuapp.com';
 let baseURL = 'localhost:8000';
-let httpPrefix = 'https://';
+let httpPrefix = 'http://';
 let wsPrefix = 'wss://';
 if (process.env.NODE_ENV === 'development') {
   baseURL = 'localhost:8000';
